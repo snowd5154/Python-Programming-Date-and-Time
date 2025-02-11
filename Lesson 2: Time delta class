@@ -1,0 +1,20 @@
+from datetime import datetime, timedelta
+
+# Creating timedelta objects
+delta1 = timedelta(days=10, hours=2, minutes=30)
+delta2 = timedelta(weeks=2, days=3)
+
+# Accessing timedelta components
+print(f"Days: {delta1.days}, Seconds: {delta1.seconds}, Microseconds: {delta1.microseconds}")
+
+# Performing arithmetic operations with timedelta
+now = datetime.now()
+future_date = now + delta1
+past_date = now - delta2
+
+print(f"Current time: {now}")
+print(f"Future date: {future_date}")
+print(f"Past date: {past_date}")
+
+# Comparing timedelta objects
+print(delta1 > delta2)
