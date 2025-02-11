@@ -1,0 +1,10 @@
+from datetime import datetime
+import pytz
+
+# Create an aware datetime object with UTC timezone
+utc_timezone = pytz.utc
+aware_dt = datetime(2025, 2, 11, 13, 30, 0, tzinfo=utc_timezone)
+
+# Alternatively, create a naive datetime object and then make it aware
+naive_dt = datetime(2025, 2, 11, 13, 30, 0)
+aware_dt_alternative = naive_dt.replace(tzinfo=utc_timezone)
