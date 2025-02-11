@@ -1,0 +1,10 @@
+import datetime
+
+# Basic time object (no timezone)
+t = datetime.time(10, 30, 45, 123456) # hour, minute, second, microsecond
+print(t)
+
+# Time object with timezone info
+tz = datetime.timezone(datetime.timedelta(hours=-5)) # UTC-5 timezone
+t_tz = datetime.time(14, 0, 0, tzinfo=tz)
+print(t_tz)
