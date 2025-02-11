@@ -1,0 +1,5 @@
+from datetime import time
+
+# Creating a naive time object
+naive_time = time(12, 30, 0)  # Represents 12:30:00 PM without timezone information
+print(naive_time)
