@@ -1,0 +1,13 @@
+    from datetime import datetime, timezone, timedelta
+    
+    # Create a timezone with a fixed offset (e.g., UTC+2)
+    tz_offset = timezone(timedelta(hours=2))
+    
+    # Get the current time with the specified timezone
+    now_aware = datetime.now(tz_offset)
+    print(now_aware)
+    
+    # UTC timezone
+     utc_tz = timezone.utc
+    now_utc = datetime.now(utc_tz)
+    print(now_utc)
